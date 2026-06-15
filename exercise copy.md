@@ -14,7 +14,7 @@ digraph {
     node [shape=box];
 
     "     コンピュータリテラシー    " -> "   プログラミングI  "->" プログラミングⅡ ";
-    "     情報工学概論 "->" 計算機工学 "->"論理回路 ";
+    "     情報工学概論 "->". 計算機工学 "->". 論理回路 ";
     "     情報工学概論 "->" プログラミング基礎Ⅰ "->" プログラミング基礎Ⅱ ";
     "基礎ゼミ "->" プログラミング基礎Ⅰ "
 
@@ -62,26 +62,19 @@ digraph {
 @startuml ex03
 left to right direction
 actor 学生 as student
-actor 教員 as teacher
 rectangle {
-    usecase "提出結果の採点" as uc9
-    usecase "リモートリポジトリにpush" as uc7
-    usecase "修正のコミット" as uc6
-    usecase "修正をステージに上げる" as uc5
+    
+    
+    
+    
+    
+    
+    usecase "修正をステージに上げる
     usecase "課題ファイルの修正" as uc4
     usecase "リポジトリのクローン" as uc2
     usecase "課題の受領" as uc3
-    usecase "課題の登録" as uc1
-
 }
 student --> uc2
-student --> uc3
-student --> uc4
-student --> uc5
-student --> uc6 
-student --> uc7
- uc1 <--  teacher 
- uc9 <-- teacher
 @enduml
 ```
 
@@ -91,28 +84,12 @@ student --> uc7
 独自の図解を作成せよ．対象は自由に決めてよいが，
 誰かのコピーにならないように留意せよ．
 
-```plantUML
-@startwbs ex02
-* 植物
-** 種子植物
-*** 被子植物
-**** 単子葉類
-**** 双子葉類
-***** 離弁花類
-***** 合弁花類
-*** 裸子植物
-** 種子を作らない植物
-*** ソウ類
-*** 菌類
-*** コケ植物
-*** シダ植物
-
-@endwbs
+```
 ```
 
 
 ## チェック
-- [x] 課題 3.1 有向グラフ
-- [x] 課題 3.2 WBS
-- [x] 課題 3.3 ユースケース図
-- [x] 課題 3.4 オリジナルの図解
+- [ ] 課題 3.1 有向グラフ
+- [ ] 課題 3.2 WBS
+- [ ] 課題 3.3 ユースケース図
+- [ ] 課題 3.4 オリジナルの図解

@@ -9,7 +9,7 @@ graph {
     rankdir="LR";
     node [shape=box];
     高校 -- 生徒;
-    大学 -- 学生; 
+    高校 -- 学生; 
 }
 ```
 
